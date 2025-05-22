@@ -7,6 +7,7 @@
 }
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 .container {
     max-width: 1440px;
@@ -46,6 +47,12 @@ nav a {
     font-weight: 500;
     font-size: 16px;
     font-family: var(--Inter);
+    &:hover {
+        color: #419D78;
+    }
+}
+#Accueil {
+    color: #419D78;
 }
 
 /*  Section 1 Introduction */
@@ -95,6 +102,10 @@ nav a {
     border: none;
     border-radius: 8px;
     padding: 12px 14px;
+    &:hover {
+        color: white;
+        background-color: #2D3047;
+    }
 }
 
 /* Section 2 À propos */
@@ -170,7 +181,7 @@ nav a {
     text-align: center;
 }
 #Projets img {
-    width: 736px;
+     object-fit: cover;
     height: 256px;
 }
 
@@ -206,7 +217,10 @@ nav a {
 .btn2 {
     border-radius: 9999px;
     border: none;
-    padding: 5px 14px;  
+    padding: 5px 14px; 
+    &:hover {
+        scale: 1.1;
+    } 
 }
 #btn3 a{
     color: white;
@@ -215,12 +229,16 @@ nav a {
     font-size: 16px;
 }
 #btn3 {
-    background-color: black;
+    background-color: #2D3047;
     border: none;
     border-radius: 8px;
     padding: 12px 14px;
     display: block;
     margin: auto;
+    &:hover {
+        color: white;
+        background-color: #419D78;
+    }
 }
 #Div-1 {
     margin: 70px 0;
@@ -271,8 +289,7 @@ form input  {
     border-radius: 8px;
     width: 292px;
     height: 50px;
-    display: flex;
-    justify-content: center;
+    
 }
 form textarea {
     border: 1px solid #D1D5DB;
@@ -289,7 +306,12 @@ form textarea {
     width: 216px;
     height: 48px;
     border-radius: 8px;
+    &:hover {
+        color: white;
+        background-color: #2D3047;
+    }
 }
+
 
 /* Footer */
 
