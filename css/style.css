@@ -302,6 +302,7 @@ footer h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 24px;
+    margin: 10px 0;
 }
 footer p {
     font-family: var(--Inter);
@@ -317,4 +318,14 @@ footer i {
     background-color: #FFFFFF1A;
     padding: 10px 10px;
     border-radius: 9999px;
+    margin: 10px 0;
+}
+footer article {
+    display: flex;
+    justify-content: space-between;
+}
+#Icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
