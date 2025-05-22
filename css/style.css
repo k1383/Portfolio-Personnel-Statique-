@@ -20,9 +20,13 @@ img {
 /* Header */
 
 header {
-    background-color: #F9FAFB;
+    margin: 10px 0;
+    /* background-color: #F9FAFB; */
+    height: 64px;
+    align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
+
 }
 header h1 {
     font-weight: 700;
@@ -33,7 +37,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 50px;
-    
 }
 nav li {
     list-style: none;
@@ -50,20 +53,38 @@ nav a {
 
 /* Introduction */
 
+#Introduction {
+    background-image:url(/IMG/imgbkc.jpg); 
+    height: 850px; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+}
+#Introduction article {
+    position: relative;
+    top: 25%;
+}
 #Introduction h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 60px;
+    color: white;
+    margin: 10px 0;
 }
 #Introduction h2 {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 24px;
+    color: white;
+    margin: 10px 0;
 }
 #Introduction p {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 18px;
+    color: white;
+    margin: 30px 0;
 }
 .btn1 a {
     color: white;
@@ -81,12 +102,17 @@ nav a {
 
 /* À propos */
 
+#À-propos div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 #À-propos h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
 }
-
 #À-propos h2 {
     font-family: var(--Playfair-Display);
     font-weight: 600;
@@ -190,7 +216,9 @@ nav a {
 }
 
 /* Contact */
-
+#Contact {
+    margin: 60px 0;
+}
 #Contact h1 { 
     font-family: var(--Playfair-Display);
     font-weight: 700;
@@ -203,6 +231,7 @@ nav a {
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    margin: 50px 0;
 }
 
 /* Form */
@@ -210,6 +239,9 @@ nav a {
 form {
     background-color: #F9FAFB;
     box-shadow: 0px 1px 2px 0px #0000000D;
+    width: 672px;
+    height: 498px;
+    border-radius: 16px;
 }
 form label {
     font-family: var(--Inter);
@@ -219,11 +251,25 @@ form label {
 form input  {
     border: 1px solid #D1D5DB;
     border-radius: 8px;
-    padding: 10px 12px;
+    width: 292px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
-
 form textarea {
     border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    width: 608px;
+    height: 146px;
+}
+#submit {
+    background-color: #419D78;
+    color: white;
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 16px;
+    width: 216px;
+    height: 48px;
     border-radius: 8px;
 }
 
