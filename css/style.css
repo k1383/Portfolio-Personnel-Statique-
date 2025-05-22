@@ -26,7 +26,6 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;  
-
 }
 header h1 {
     font-weight: 700;
@@ -40,7 +39,6 @@ nav ul {
 }
 nav li {
     list-style: none;
-    
 }
 nav a {
     text-decoration: none;
@@ -48,10 +46,9 @@ nav a {
     font-weight: 500;
     font-size: 16px;
     font-family: var(--Inter);
-    
 }
 
-/* Introduction */
+/*  Section 1 Introduction */
 
 #Introduction {
     background: linear-gradient(90deg, rgba(45, 48, 71, 0.9) 0%, rgba(45, 48, 71, 0.7) 50%, rgba(45, 48, 71, 0) 100%), url("/IMG/imgbkc.jpg");
@@ -100,18 +97,19 @@ nav a {
     padding: 12px 14px;
 }
 
-/* À propos */
+/* Section 2 À propos */
 
 #À-propos div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    gap: 50px;
 }
 #À-propos h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
     text-align: center;
+    margin: 70px 0;
 }
 #À-propos h2 {
     font-family: var(--Playfair-Display);
@@ -131,53 +129,73 @@ nav a {
     font-size: 16px;
 }
 
-/* section 2 */
+/* Mon parcours */
 
-#section-2 {
+#MonParcours p {
+    margin: 20px 0;
+}
+#MonParcours i {
+    font-size: 20px;
+}
+
+/* Mes compétences */
+
+#Mes-compétences i {
+    font-size: 50px;
+    margin: 20px 70px;
+}
+#Mes-compétences div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section 3 Projets */
+
+#Projets {
     background-color: #F9FAFB;
     padding: 30px;
+    margin: 70px 0;
 }
-#section-2 h1 {
+#Projets h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
     text-align: center;
     margin: 30px 0;
 }
-#section-2 p {
+#Projets p {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 18px;
     text-align: center;
 }
-#section-2 img {
+#Projets img {
     width: 736px;
     height: 256px;
 }
 
-/* Projets */
+/* Mes projets */
 
-#Projets h2 {
+#Mes-projets {
+    box-shadow: 0px 2px 4px -2px #0000001A;
+    box-shadow: 0px 4px 6px -1px #0000001A;
+    width: 736px;
+    height: 420px;
+    border-radius: 8px;
+}
+#Mes-projets h2 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 20px;
     margin: 15px 20px;
 }
-#Projets article h3 {
+#Mes-projets article h3 {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 16px;
     margin: 15px 20px;
 }
-.btn2 {
-    border-radius: 9999px;
-    border: none;
-    padding: 5px 14px;  
-}
-#Div-2 {
-    margin: 15px 20px;
-}
-#Projets a {
+#Mes-projets a {
     text-decoration: none;
     color: #419D78;
     font-family: var(--Inter);
@@ -185,20 +203,10 @@ nav a {
     font-size: 16px;
     margin: 15px 20px;
 }
-#Projets {
-    box-shadow: 0px 2px 4px -2px #0000001A;
-    box-shadow: 0px 4px 6px -1px #0000001A;
-    width: 736px;
-    height: 420px;
-    border-radius: 8px;
-
-}
-#Div-1 {
-    margin: 70px 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    
+.btn2 {
+    border-radius: 9999px;
+    border: none;
+    padding: 5px 14px;  
 }
 #btn3 a{
     color: white;
@@ -214,8 +222,18 @@ nav a {
     display: block;
     margin: auto;
 }
+#Div-1 {
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;  
+}
+#Div-2 {
+    margin: 15px 20px;
+}
 
-/* Contact */
+/* Section 4 Contact */
+
 #Contact {
     margin: 60px 0;
 }
