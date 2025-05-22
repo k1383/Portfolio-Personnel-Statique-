@@ -20,12 +20,9 @@ img {
 /* Header */
 
 header {
+    background-color: #F9FAFB;
     display: flex;
-    justify-content: space-around;
-    gap: 200px;
-    
-    
-    margin: 15px 0;
+    justify-content: space-between;
 }
 header h1 {
     font-weight: 700;
@@ -111,7 +108,7 @@ nav a {
 /* section 2 */
 
 #section-2 {
-    background: #F9FAFB;
+    background-color: #F9FAFB;
     padding: 30px;
 }
 #section-2 h1 {
@@ -190,4 +187,70 @@ nav a {
     padding: 12px 14px;
     display: block;
     margin: auto;
+}
+
+/* Contact */
+
+#Contact h1 { 
+    font-family: var(--Playfair-Display);
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin: 15px 0;
+}
+#Contact p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Form */
+
+form {
+    background-color: #F9FAFB;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+form label {
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 16px;
+}
+form input  {
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+form textarea {
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2D3047;
+    padding: 30px;
+}
+footer h1 {
+    color: white;
+    font-family: var(--Playfair-Display);
+    font-weight: 700;
+    font-size: 24px;
+}
+footer p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9CA3AF;
+;
+}
+footer i {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #FFFFFF1A;
+    padding: 10px 10px;
+    border-radius: 9999px;
 }
