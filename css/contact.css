@@ -19,6 +19,7 @@
     margin:auto;
     padding: 0 15px;
 }
+
 img {
     width: 100%;
 }
@@ -56,87 +57,58 @@ nav a {
         color: #419D78;
     }
 }
-#HeaderProjects {
+#Accueil {
     color: #419D78;
 }
 #burgermenu {
     display: none;
 }
 
-/* Section 1 Projets */
 
-#Projets {
+
+/* Form */
+
+form {
     background-color: #F9FAFB;
-    padding: 30px;
-    margin: 15px 0;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    width: 672px;
+    height: 498px;
+    border-radius: 16px;
 }
-#Projets h1 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-}
-#Projets p {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    margin: 30px 0;
-}
-#Projets img {
-    object-fit: cover;
-    height: 256px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-/* Mes projets */
-
-#Mes-projets {
-    box-shadow: 0px 2px 4px -2px #0000001A;
-    box-shadow: 0px 4px 6px -1px #0000001A;
-    width: 710px;
-    height: 420px;
-    border-radius: 8px;
-}
-#Mes-projets h2 {
-    font-family: var(--Playfair-Display);
-    font-weight: 700;
-    font-size: 20px;
-    margin: 15px 20px;
-}
-#Mes-projets article h3 {
-    font-family: var(--Inter);
-    font-weight: 400;
-    font-size: 16px;
-    margin: 15px 20px;
-}
-#Mes-projets a {
-    text-decoration: none;
-    color: #419D78;
+form label {
     font-family: var(--Inter);
     font-weight: 500;
     font-size: 16px;
-    margin: 15px 20px;
+    
 }
-.btn2 {
-    border-radius: 9999px;
+form input  {
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    width: 292px;
+    height: 50px;
+    
+}
+form textarea {
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    width: 608px;
+    height: 146px;
+}
+#submit {
+    background-color: #419D78;
     border: none;
-    padding: 5px 14px; 
+    color: white;
     font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 16px;
+    width: 216px;
+    height: 48px;
+    border-radius: 8px;
     &:hover {
-        scale: 1.1;
-    } 
+        color: white;
+        background-color: #2D3047;
+    }
 }
-.Div-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-.Div-2 {
-    margin: 15px 20px;
-}
-
 
 /* Footer */
 
@@ -208,28 +180,10 @@ footer article {
     .nav-links.active {
         display: flex;
     }
-    
-    /* Section 1 Projets */
 
-    #Mes-projets {
-        width: 450px;
-        height: 450px;
-    }
 }
 
-
 @media screen and (max-width:767px) {
-
-    /* Section 1 Projets */
-
-    #Mes-projets {
-        width: 258px;
-        height: 502px;
-    }
-    .Div-1 {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 
     /* Footer */
 

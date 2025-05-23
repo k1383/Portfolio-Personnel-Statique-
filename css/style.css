@@ -7,7 +7,7 @@
 }
 * {
     margin: 0;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 .container {
     max-width: 1440px;
@@ -174,7 +174,7 @@ nav a {
 
 #Projets {
     background-color: #F9FAFB;
-    padding: 30px;
+    padding: 80px;
     margin: 15px 0;
 }
 #Projets h1 {
@@ -230,6 +230,7 @@ nav a {
     border-radius: 9999px;
     border: none;
     padding: 5px 14px; 
+    font-family: var(--Inter);
     &:hover {
         scale: 1.1;
     } 
@@ -237,7 +238,6 @@ nav a {
 .Div-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
 }
 .Div-2 {
     margin: 15px 20px;
@@ -289,12 +289,12 @@ form {
     width: 672px;
     height: 498px;
     border-radius: 16px;
-    
 }
 form label {
     font-family: var(--Inter);
     font-weight: 500;
     font-size: 16px;
+    
 }
 form input  {
     border: 1px solid #D1D5DB;
@@ -311,6 +311,7 @@ form textarea {
 }
 #submit {
     background-color: #419D78;
+    border: none;
     color: white;
     font-family: var(--Inter);
     font-weight: 500;
@@ -342,7 +343,6 @@ footer p {
     font-weight: 400;
     font-size: 16px;
     color: #9CA3AF;
-;
 }
 footer i {
     font-size: 20px;
@@ -354,8 +354,6 @@ footer i {
     margin: 10px 0;
 }
 footer article {
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
