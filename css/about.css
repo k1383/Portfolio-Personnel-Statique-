@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --Inter : "Inter", sans-serif;
+    --Playfair-Display :  "Playfair Display", serif;
+}
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1440px;
+    margin:auto;
+    padding: 0 15px;
+}
+img {
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    margin: 10px 0;
+    /* background-color: #F9FAFB; */
+    height: 64px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;  
+}
+header h1 {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--Playfair-Display);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--Inter);
+    &:hover {
+        color: #419D78;
+    }
+}
+#HeaderApropos {
+    color: #419D78;
+}
+#burgermenu {
+    display: none;
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #2D3047;
+    padding: 30px;
+}
+footer h1 {
+    color: white;
+    font-family: var(--Playfair-Display);
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 0;
+}
+footer p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9CA3AF;
+;
+}
+footer i {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #FFFFFF1A;
+    padding: 10px 10px;
+    border-radius: 9999px;
+    margin: 10px 0;
+}
+footer article {
+    display: flex;
+    justify-content: space-between;
+}
+#Icons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#github i:hover {
+    background-color:#2D3047;
+}
+#linkedin i:hover {
+    background-color: #0e76a8;
+}
+#instagram i:hover {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
