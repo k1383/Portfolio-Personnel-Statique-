@@ -238,6 +238,7 @@ nav a {
 .Div-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 .Div-2 {
     margin: 15px 20px;
@@ -294,6 +295,7 @@ form label {
     font-family: var(--Inter);
     font-weight: 500;
     font-size: 16px;
+    display: flex;
     
 }
 form input  {
@@ -301,6 +303,7 @@ form input  {
     border-radius: 8px;
     width: 292px;
     height: 50px;
+    
     
 }
 form textarea {
