@@ -103,20 +103,24 @@
         <section id="Contact"> <!-- Section 4  To contact me -->
             <h1>Contactez-moi</h1>
             <p>Vous avez un projet en tête ou une question ? N'hésitez pas à me contacter, je <br> vous répondrai dans les plus brefs délais.</p>
-            <form class="container" action="#">
+            <form class="container" action="#" method="post">
                 <label for="name">Nom</label>
-                <input type="text">
+                <input type="text" id="name" name="name" required>
+
                 <label for="email">Email</label>
-                <input type="text">
+                <input type="email" id="email" name="email" required>
+
                 <label for="message">Message</label>
-                <textarea name="" id=""></textarea>
-               <input id="submit" type="submit" value="Envoyer le message">
+                <textarea id="message" name="message" required></textarea>
+
+                <input id="submit" type="submit" value="Envoyer le message">
             </form>
         </section>
+        
     </main>
 
     <footer>
-        <article  class="container">
+        <article class="container">
             <div>
                 <h1>Cournut Kantin</h1>
                 <p>Développeur Web</p>
@@ -128,7 +132,7 @@
                     <a id="linkedin" href="https://www.linkedin.com/in/kantin-cournut-15207432b"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a id="instagram" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <p>© 2025 Cournut Kantin. Tous droits réservés.</p>
+                <p id="Copyright">© 2025 Cournut Kantin. Tous droits réservés.</p>
             </div>
         </article>
     </footer> 

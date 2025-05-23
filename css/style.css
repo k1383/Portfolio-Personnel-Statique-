@@ -289,6 +289,7 @@ form {
     width: 672px;
     height: 498px;
     border-radius: 16px;
+    
 }
 form label {
     font-family: var(--Inter);
@@ -323,7 +324,6 @@ form textarea {
     }
 }
 
-
 /* Footer */
 
 footer {
@@ -354,8 +354,14 @@ footer i {
     margin: 10px 0;
 }
 footer article {
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#Copyright {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 #Icons {
     display: flex;
@@ -412,5 +418,15 @@ footer article {
     .Div-1 {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+
+    footer article {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer div {
+        margin: 10px 0;
     }
 }
