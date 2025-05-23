@@ -14,6 +14,12 @@
     margin:auto;
     padding: 0 15px;
 }
+#container {
+    max-width: 1440px;
+    margin:auto;
+    padding: 0 15px;
+}
+
 img {
     width: 100%;
 }
@@ -53,6 +59,9 @@ nav a {
 }
 #Accueil {
     color: #419D78;
+}
+#burgermenu {
+    display: none;
 }
 
 /*  Section 1 Introduction */
@@ -161,29 +170,31 @@ nav a {
     margin: 20px 0;
 }
 
-/* Section 3 Projets */
+/* Section 1 Projets */
 
 #Projets {
     background-color: #F9FAFB;
     padding: 30px;
-    margin: 70px 0;
+    margin: 15px 0;
 }
 #Projets h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
     text-align: center;
-    margin: 30px 0;
 }
 #Projets p {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 18px;
     text-align: center;
+    margin: 30px 0;
 }
 #Projets img {
-     object-fit: cover;
+    object-fit: cover;
     height: 256px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 /* Mes projets */
@@ -191,7 +202,7 @@ nav a {
 #Mes-projets {
     box-shadow: 0px 2px 4px -2px #0000001A;
     box-shadow: 0px 4px 6px -1px #0000001A;
-    width: 736px;
+    width: 710px;
     height: 420px;
     border-radius: 8px;
 }
@@ -223,6 +234,14 @@ nav a {
         scale: 1.1;
     } 
 }
+.Div-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.Div-2 {
+    margin: 15px 20px;
+}  
 #btn3 a{
     color: white;
     text-decoration: none;font-family: var(--Inter);
@@ -235,20 +254,11 @@ nav a {
     border-radius: 8px;
     padding: 12px 14px;
     display: block;
-    margin: auto;
+    margin: 50px auto;
     &:hover {
         color: white;
         background-color: #419D78;
     }
-}
-#Div-1 {
-    margin: 70px 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;  
-}
-#Div-2 {
-    margin: 15px 20px;
 }
 
 /* Section 4 Contact */
@@ -363,4 +373,44 @@ footer article {
     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header */
+
+    #burgermenu{
+        display: flex;
+        color: black;
+        font-weight: 900;
+        font-size: 16px;
+    }
+    .nav-links {
+        display: none; 
+    }
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Section 1 Projets */
+
+    #Mes-projets {
+        width: 450px;
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    /* Section 1 Projets */
+
+    #Mes-projets {
+        width: 258px;
+        height: 502px;
+    }
+    .Div-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

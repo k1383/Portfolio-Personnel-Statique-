@@ -58,6 +58,30 @@ nav a {
     display: none;
 }
 
+/* Section 1 About */
+
+#MonParcours {
+    background-color: #F9FAFB;
+    
+}
+#MonParcours h1 {
+    text-align: center;
+    font-family: var(--Playfair-Display);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#MonParcours h2 {
+    font-family: var(--Playfair-Display);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#MonParcours p {
+    font-family: var(--Inter);
+    font-weight: 400;
+    font-size: 16px;
+}
 
 
 
