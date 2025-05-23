@@ -54,7 +54,9 @@ nav a {
 #HeaderProjects {
     color: #419D78;
 }
-
+#burgermenu {
+    display: none;
+}
 
 /* Section 1 Projets */
 
@@ -174,4 +176,34 @@ footer article {
 }
 #instagram i:hover {
     background-color: pink;
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Header */
+
+    #burgermenu{
+        display: flex;
+        color: black;
+        font-weight: 900;
+        font-size: 16px;
+    }
+    .nav-links {
+        display: none; 
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    /* Section 1 Projets */
+
+    .Div-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+    }
+
+
+
 }
