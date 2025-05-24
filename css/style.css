@@ -19,7 +19,6 @@
     margin:auto;
     padding: 0 15px;
 }
-
 img {
     width: 100%;
 }
@@ -28,7 +27,6 @@ img {
 
 header {
     margin: 10px 0;
-    /* background-color: #F9FAFB; */
     height: 64px;
     align-items: center;
     display: flex;
@@ -74,10 +72,13 @@ nav a {
     background-position: center;
     background-attachment: fixed; 
 }
-#Introduction article {
-    position: relative;
-    top: 25%;
-}
+#Introduction div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    /* display: flex;
+    justify-content: space-between; */
+} 
 #Introduction h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
@@ -98,6 +99,16 @@ nav a {
     font-size: 18px;
     color: white;
     margin: 30px 0;
+}
+#Introduction article {
+    margin: 200px 0;
+}
+#Introduction img {
+    object-fit: cover;
+    width: 248px;
+    width: 248px;
+    border-radius: 99999px;
+    margin: 250px 200px;
 }
 .btn1 a {
     color: white;
@@ -170,11 +181,11 @@ nav a {
     margin: 20px 0;
 }
 
-/* Section 1 Projets */
+/* Section 3 Projets */
 
 #Projets {
     background-color: #F9FAFB;
-    padding: 80px;
+    padding: 30px;
     margin: 15px 0;
 }
 #Projets h1 {
@@ -242,7 +253,7 @@ nav a {
 }
 .Div-2 {
     margin: 15px 20px;
-}  
+}
 #btn3 a{
     color: white;
     text-decoration: none;font-family: var(--Inter);
@@ -261,6 +272,7 @@ nav a {
         background-color: #419D78;
     }
 }
+
 
 /* Section 4 Contact */
 
@@ -289,29 +301,51 @@ form {
     box-shadow: 0px 1px 2px 0px #0000000D;
     width: 672px;
     height: 498px;
-    border-radius: 16px;
+    border-radius: 16px;    
+}
+#Div-3 {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+#Div-4 {
+    margin: 0 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
 }
 form label {
     font-family: var(--Inter);
     font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    
+    font-size: 16px;  
+    margin: 10px 0;
 }
 form input  {
     border: 1px solid #D1D5DB;
     border-radius: 8px;
     width: 292px;
     height: 50px;
-    
-    
 }
 form textarea {
     border: 1px solid #D1D5DB;
     border-radius: 8px;
     width: 608px;
     height: 146px;
+    margin: 10px 0;
 }
+#Div-5 {
+    margin: 10px 30px;
+}
+#checkbox {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    
+}
+
 #submit {
     background-color: #419D78;
     border: none;
@@ -322,6 +356,7 @@ form textarea {
     width: 216px;
     height: 48px;
     border-radius: 8px;
+    margin: 15px 30px;
     &:hover {
         color: white;
         background-color: #2D3047;
@@ -399,7 +434,13 @@ footer article {
         display: flex;
     }
 
-    /* Section 1 Projets */
+    /* Section 1 Introduction */
+
+    #Introduction    {
+        
+    }
+  
+    /* Section 3 Projets */
 
     #Mes-projets {
         width: 450px;
