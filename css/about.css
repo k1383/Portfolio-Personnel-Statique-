@@ -60,21 +60,22 @@ nav a {
 
 /* Section 1 About */
 
-#MonParcours {
+#About {
     background-color: #F9FAFB;
-    
 }
 #MonParcours h1 {
     text-align: center;
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
+    
 }
 
 #MonParcours h2 {
     font-family: var(--Playfair-Display);
     font-weight: 600;
     font-size: 24px;
+    margin: 20px 0;
 }
 
 #MonParcours p {

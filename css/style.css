@@ -76,8 +76,6 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    /* display: flex;
-    justify-content: space-between; */
 } 
 #Introduction h1 {
     font-family: var(--Playfair-Display);
@@ -466,7 +464,13 @@ footer article {
 
     /* Header */    
 
-    /* Section 1 Projets */
+    /* Section 1 Introduction */
+
+    #Introduction div {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    /* Section 3 Projets */
 
     #Mes-projets {
         width: 258px;
