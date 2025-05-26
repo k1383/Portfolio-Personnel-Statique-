@@ -20,7 +20,7 @@ myForm.addEventListener('submit', (e) => {
     if (specialCharacters.test(nameInput.value)) {
         alert("The name must not contain special characters.");
     } if (nameInput.value.length < 3){
-        console.log("error");
+        alert("error");
     } else {
         alert("validé");
     }

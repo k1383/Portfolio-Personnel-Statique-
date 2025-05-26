@@ -58,30 +58,65 @@ nav a {
     display: none;
 }
 
-/* Section 1 About */
-
-#About {
-    background-color: #F9FAFB;
+/* Section 1 À propos */
+#Div-aProrpos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-#MonParcours h1 {
-    text-align: center;
+#À-propos h1 {
     font-family: var(--Playfair-Display);
     font-weight: 700;
     font-size: 36px;
-    
+    text-align: center;
+    margin: 35px 0;
 }
-
-#MonParcours h2 {
+#À-propos h2 {
     font-family: var(--Playfair-Display);
     font-weight: 600;
     font-size: 24px;
-    margin: 20px 0;
 }
-
-#MonParcours p {
+#À-propos p {
     font-family: var(--Inter);
     font-weight: 400;
     font-size: 16px;
+}
+#À-propos a {
+    color: #419D78;
+    text-decoration: none;
+    font-family: var(--Inter);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Mon parcours */
+
+#MonParcours p {
+    margin: 20px 0;
+}
+#MonParcours i {
+    font-size: 20px;
+}
+
+/* Mes compétences */
+
+#Mes-compétences {
+    margin: 30px 40px;
+}
+#Mes-compétences i {
+    font-size: 45px;
+    margin: 10px 0px;
+}
+#Div-Competences {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 10px 0;
+}
+#Div-Competences article {
+    text-align: center;
+}
+#react {
+  margin: 0 15px;
 }
 
 
@@ -94,6 +129,7 @@ nav a {
 footer {
     background-color: #2D3047;
     padding: 30px;
+    margin: 30px 0;
 }
 footer h1 {
     color: white;
