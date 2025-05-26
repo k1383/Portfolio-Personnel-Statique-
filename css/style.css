@@ -470,6 +470,7 @@ footer article {
         display: grid;
         grid-template-columns: 1fr;
     } 
+    
     /* Section 3 Projets */
 
     #Mes-projets {
