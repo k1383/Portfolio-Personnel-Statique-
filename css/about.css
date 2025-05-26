@@ -68,12 +68,13 @@ nav a {
     font-weight: 700;
     font-size: 36px;
     text-align: center;
-    margin: 35px 0;
+    margin: 85px 0;
 }
 #À-propos h2 {
     font-family: var(--Playfair-Display);
     font-weight: 600;
     font-size: 24px;
+    margin: 10px 0;
 }
 #À-propos p {
     font-family: var(--Inter);
@@ -100,7 +101,7 @@ nav a {
 /* Mes compétences */
 
 #Mes-compétences {
-    margin: 30px 40px;
+    margin: 0px 40px;
 }
 #Mes-compétences i {
     font-size: 45px;
@@ -110,19 +111,11 @@ nav a {
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    margin: 10px 0;
+    margin: 35px 0;
 }
 #Div-Competences article {
     text-align: center;
 }
-#react {
-  margin: 0 15px;
-}
-
-
-
-
-
 
 /* Footer */
 
